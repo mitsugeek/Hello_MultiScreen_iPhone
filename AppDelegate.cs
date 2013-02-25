@@ -30,7 +30,21 @@ namespace Hello_MultiScreen_iPhone
 			
 			// If you have defined a root view controller, set it here:
 			// window.RootViewController = myViewController;
+
+			//---- instantiate a new navigation controller 
+			var rootNavigationController = new UINavigationController(); 
 			
+			//---- instantiate a new home screen 
+			HomeScreen homeScreen = new HomeScreen(); 
+			
+			//---- add the home screen to the navigation controller 
+			// (it'll be the top most screen) 
+			rootNavigationController.PushViewController(homeScreen, false); 
+			
+			//---- set the root view controller on the window. the nav 
+			// controller will handle the rest 
+			this.window.RootViewController = rootNavigationController; 
+
 			// make the window visible
 			window.MakeKeyAndVisible ();
 			
