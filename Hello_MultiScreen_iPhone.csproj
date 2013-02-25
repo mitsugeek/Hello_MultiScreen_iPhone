@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Screen\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -90,6 +91,23 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Screen\HomeScreen.cs" />
+    <Compile Include="Screen\HomeScreen.designer.cs">
+      <DependentUpon>HomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\HelloWorldScreen.cs" />
+    <Compile Include="Screen\HelloWorldScreen.designer.cs">
+      <DependentUpon>HelloWorldScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screen\HelloUniverseScreen.cs" />
+    <Compile Include="Screen\HelloUniverseScreen.designer.cs">
+      <DependentUpon>HelloUniverseScreen.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="Screen\HomeScreen.xib" />
+    <InterfaceDefinition Include="Screen\HelloWorldScreen.xib" />
+    <InterfaceDefinition Include="Screen\HelloUniverseScreen.xib" />
+  </ItemGroup>
 </Project>
