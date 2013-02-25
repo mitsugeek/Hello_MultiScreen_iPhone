@@ -9,4 +9,9 @@
 
 @implementation HomeScreen
 
+- (void)dealloc {
+    [_btnHelloWorld release];
+    [_btnHelloUniverse release];
+    [super dealloc];
+}
 @end

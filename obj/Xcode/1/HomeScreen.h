@@ -13,5 +13,7 @@
 
 @interface HomeScreen : UIViewController {
 }
+@property (retain, nonatomic) IBOutlet UIButton *btnHelloWorld;
+@property (retain, nonatomic) IBOutlet UIButton *btnHelloUniverse;
 
 @end
