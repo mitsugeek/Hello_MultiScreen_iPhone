@@ -11,6 +11,7 @@ namespace Hello_MultiScreen_iPhone
 	{
 		public HelloWorldScreen () : base ("HelloWorldScreen", null)
 		{
+			this.Title = "World!";
 		}
 		
 		public override void DidReceiveMemoryWarning ()
